@@ -15,6 +15,20 @@ h1 {
 }
 
 
+/* Layout */
+
+.team {
+  display: block;
+}
+
+.col {
+  margin: 25px;
+}
+
+
+
+
+
 /* Buttons */
 
 .btns {
