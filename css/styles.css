@@ -14,11 +14,15 @@ h1 {
 
 }
 
+h2 {
+  margin-top: 20px;
+}
+
 
 /* Layout */
 
 .team {
-  display: block;
+  display: flex;
 }
 
 .col {
