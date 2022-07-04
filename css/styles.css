@@ -1,0 +1,32 @@
+html {
+  margin: 0;
+}
+
+/* Typography */
+
+body {
+  max-width: 90%;
+  font-family: arial, sans-serif;
+
+}
+
+h1 {
+
+}
+
+
+/* Buttons */
+
+.btns {
+  display: flex;
+}
+
+.btn {
+  padding: 15px 35px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: teal;
+  color: darkorange;
+
+
+}
