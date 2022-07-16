@@ -2,49 +2,174 @@ html {
   margin: 0;
 }
 
+
+
+
+
+
 /* Typography */
 
 body {
   max-width: 90%;
   font-family: arial, sans-serif;
+  background-color: #0A0F0D;
+}
 
+.ref {
+  font-size: 8px;
+  color: grey;
+    margin: 3px 0 25px;
 }
 
 h1 {
+  font-size: 3rem;
 
 }
 
 h2 {
+  font-size: 2rem;
   margin-top: 20px;
 }
+
+h3 {
+  font-size:1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+
+
 
 
 /* Layout */
 
+.intro {
+  color: #D5C7BC;
+  margin-left: 200px;
+  padding: 30px 40px 10px;
+  background-color: #2D334D;
+  min-width: 400px;
+  border-bottom: solid 4px #C4CBCA;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 30px 40px;
+  background-color: #E0D5CD;
+  min-width: 400px;
+}
+
 .team {
-  display: flex;
+  display: block;
+
 }
 
 .col {
   margin: 25px;
 }
 
+.image {
+  display: block;
+  width: 100%;
+  min-width: 150px;
+  height: auto;
+}
 
-
-
-
-/* Buttons */
-
-.btns {
+.techs {
   display: flex;
 }
 
-.btn {
-  padding: 15px 35px;
-  margin: 10px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #000;
+}
+
+.linkbox {
+  position: relative;
+  width: 100%;
+}
+
+.linkbox:hover .overlay{
+opacity:0.7;
+}
+
+.ovtxt {
+  color: #D5C7BC;
+  position: absolute;
+  text-align: center;
+  width: inherit;
+  font-size: 3vw;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* Navigation */
+
+.team a {
+  color:#3CBBB1;
+}
+
+a:visited {
+  color:#A293DC;
+}
+
+a:hover {
+  color: chartreuse;
+}
+
+a:focus {
+  color:#EE4266;
+}
+
+
+
+.navbar {
+  text-align: right;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0A0F0D;
+  overflow-x: hidden;
+  padding-top: 20px
+}
+
+.navbar a {
+  padding: 10px 8px 10px 16px;
+  margin: 10px 0;
   text-decoration: none;
-  background-color: teal;
-  color: darkorange;
+  font-size: 25px;
+  color: #E0D5CD;
+  display: block;
+}
 
-
+.navbar a:hover {
+  color: #f1f1f1;
 }
