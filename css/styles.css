@@ -85,6 +85,14 @@ li {
   height: auto;
 }
 
+.avatar {
+  float: left;
+}
+
+.avatar2 {
+  float: right;
+}
+
 .techs {
   display: flex;
 }
@@ -126,7 +134,9 @@ opacity:0.7;
   transform: translate(-50%, -50%);
 }
 
-
+.table {
+  border: solid 4px #2D334D;
+}
 
 
 
