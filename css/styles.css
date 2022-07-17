@@ -68,9 +68,10 @@ li {
   min-width: 400px;
 }
 
-.team {
-  display: block;
-
+.mem {
+  border-bottom: solid #A293DC 3px;
+  padding-top:30px;
+  padding-bottom: 60px;
 }
 
 .col {
@@ -130,7 +131,7 @@ opacity:0.7;
 
 /* Navigation */
 
-.team a {
+.mem a {
   color:#3CBBB1;
 }
 
