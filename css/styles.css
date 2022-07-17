@@ -105,9 +105,10 @@ li {
 .linkbox {
   position: relative;
   width: 100%;
+  border: solid 4px #2D334D;
 }
 
-.linkbox:hover .overlay{
+.linkbox:hover .overlay {
 opacity:0.7;
 }
 
