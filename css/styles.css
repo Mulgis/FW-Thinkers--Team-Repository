@@ -54,7 +54,8 @@ li {
 
 .intro {
   color: #D5C7BC;
-  margin-left: 200px;
+  margin-left: 300px;
+  margin-right: 100px;
   padding: 30px 40px 10px;
   background-color: #2D334D;
   min-width: 400px;
@@ -62,7 +63,8 @@ li {
 }
 
 .content {
-  margin-left: 200px;
+  margin-left: 300px;
+  margin-right: 100px;
   padding: 30px 40px;
   background-color: #E0D5CD;
   min-width: 400px;
@@ -87,10 +89,16 @@ li {
 
 .avatar {
   float: left;
+  margin-right: 20px;
 }
 
 .avatar2 {
   float: right;
+  margin-left: 20px
+}
+
+.graph {
+  margin: 0 20% 20px;
 }
 
 .techs {
@@ -140,6 +148,11 @@ opacity:0.7;
   max-width: 80%;
 }
 
+.big5 {
+  float: left;
+  margin-right: 20px;
+  max-width: 80%
+}
 
 
 /* Navigation */
@@ -165,7 +178,7 @@ a:focus {
 .navbar {
   text-align: right;
   height: 100%;
-  width: 200px;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
