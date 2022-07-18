@@ -135,7 +135,9 @@ opacity:0.7;
 }
 
 .table {
-  border: solid 4px #2D334D;
+  border: solid 3px #2D334D;
+  width: 1000px;
+  max-width: 80%;
 }
 
 
