@@ -114,12 +114,27 @@ li {
 }
 
 .graph {
-  margin: 0 20% 20px;
+
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.pent {
+@media(max-width: 1700px) {
+  .graph {
+    flex-direction: column;
+  }
+}
+
+  .pent {
   width: 200px;
   height: 140px;
+
+}
+
+@media(max-width: 1700px) {
+  .pent {
+    width: ;
+  }
 }
 
 .techs {
@@ -183,7 +198,8 @@ opacity:0.7;
 
 .prevs {
   display: flex;
-    margin: 40px 28%;
+    justify-content: space-between;
+    margin: 0 20%;
     padding: 10px;
 
 }
