@@ -70,6 +70,14 @@ li {
   min-width: 400px;
 }
 
+.cent {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10%;
+}
+
+/* Homepage */
+
 .mem {
   border-bottom: solid #A293DC 3px;
   padding-top:30px;
@@ -113,6 +121,18 @@ li {
 
 }
 
+#test {
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 0;
+}
+
+#test2 {
+  width: 100%;
+  border: solid 3px #2D334D;
+}
+
 .graph {
 
   display: flex;
@@ -136,6 +156,8 @@ li {
     width: ;
   }
 }
+
+/* Technologies Page */
 
 .techs {
   display: flex;
@@ -178,22 +200,17 @@ opacity:0.7;
   transform: translate(-50%, -50%);
 }
 
+/* Careers Page */
 .table {
   border: solid 3px #2D334D;
   width: 1000px;
   max-width: 80%;
 }
 
-#test {
-  display: flex;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 0;
-}
+/* Project Page*/
 
-#test2 {
-  width: 100%;
-  border: solid 3px #2D334D;
+.longlist li {
+    padding-bottom: 5.5rem;
 }
 
 .prevs {
@@ -201,17 +218,51 @@ opacity:0.7;
     justify-content: space-between;
     margin: 0 20%;
     padding: 10px;
-
 }
 
 .preview {
-  margin: 1px;
-  margin-bottom: -4px;
+  margin: 20px 0;
+
   padding: 0;
   max-width: 45%;
   border: solid 3px #2D334D;
 }
 
+.snap {
+  margin: 0;
+  padding:0;
+}
+
+.prev1 {
+  width: 250px;
+  height: 250px;
+  border: solid 3px #2D334D;
+}
+
+.prev2 {
+  width: 250px;
+  height: 250px;
+  border: solid 3px #2D334D;
+}
+
+.prev3 {
+  width: 250px;
+  height: 250px;
+  border: solid 3px #2D334D;
+}
+
+.snap p {
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+
+@media(max-width: 1700px) {
+  .cent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* Navigation */
 
@@ -230,8 +281,6 @@ a:hover {
 a:focus {
   color:#EE4266;
 }
-
-
 
 .navbar {
   text-align: right;
