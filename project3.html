@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project page 3</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="process.html">Our Methods</a>
+    <a href="career.html">Our Ambitions</a>
+    <a href="industry.html">Industry Data</a>
+    <a href="tech.html">Technologies</a>
+    <a href="itwork.html">IT Work</a>
+    <a href="projects.html">Our Project Proposal</a>
+    <li><a href="project2.html">Back</a></li>
+    <a href="project3.html">Delivered Artefacts</a>
+    <a href="project4.html">Next</a>
+
+  </div> <!-- / navbar -->
+
+
+    <div class="intro">
+  <header>
+    <h1>Our Project Proposal: PopSwap</h1>
+    </header>
+
+
+
+        <h2>DELIVERED ARTEFACTS</h2>
+        <h4>INTERFACE MOCKUPS</h4>
+        <p>The teams first deliverable artefact towards the creation of the app was creating mock-ups of the user facing application interface. This process was carried out to help visualise the way certain features would be shown in the application, and the way users could interact with those features. The below images represent several different features of the application, and prove that with a carefully integrated interface, the application can be functional and accessible.</p>
+      </div><!-- / intro -->
+      <div class="content">
+
+        <br>
+        <p>This screen shows the display when a specific item is selected, showing the further details within the document, the size and value category prominently displayed, as well as the pertinent information about the user, such as relative distance and user rating.</p>
+        <br>
+        <p>The interactive map tab, available to be quickly acessed through selecting the relevant icon on the task bar, which is always displayed at the bottom of the screen, shows an overview of items in the area, with suburbs hosting available items marked with pins. Selecting a pin will display small ‘quick look’ icons below the map, with size and value category prominently displayed.</p>
+        <br>
+        <p>The search function is represented here by a simple search bar allowing users to enter a type of clothing, and editing additional filters for the items below, such as size and value. Extra categorisation such as colour, pattern and age are not pictured but intended to be also available filters. Applicable items will be displayed under the search terms, and users will be able to scroll through the ‘quick look’ icons, with the ability to select an item for a more in depth description. This tab will also be available quickly by selecting the relevant task bar icon.</p>
+        <br>
+        <p>The trade screen shows a basic implementation of trade function, allowing users to see the ‘quick look’ icons of the items being traded under the columns of what will be given, and what will be received. The user is also able to see pertinent information about the user they are trading with, such as relative distance and user rating. The user will have the options to simply accept the offer, add or remove items, or message the other user. These options have been retooled in further development of the interface, but the basic concept remains unchanged.</p>
+        <br><br><br>
+
+                <div class="prevs">
+                  <img src="Images/ps_tshirtsearch.jpg" alt="image of search tab showing clothing items listed" class="preview">
+                  <img src="Images/ps_map.jpg" alt="image of map tab showing location of nearby users" class="preview">
+                </div><!-- / prevs -->
+                <div class="prevs">
+                  <img src="Images/ps_messages.jpg" alt="image of trade view showing items being offered by both parties" class="preview">
+                  <img src="Images/ps_itemlisting.jpg" alt="image of item view showing selected item being advertised for trade" class="preview">
+              </div><!-- / prevs -->
+              <br><br><br>
+
+              <h4>FIGMA PROTOTYPE</h4>
+              <p>Screenshots of Figma mockups</p>
+              <br><br>
+              <h4>ANDROID STUDIO + MONGO DB PROTOTYPE/TEST</h4>
+              <p>Below are screenshots of an emulator running one of our test interfaces in Android Studio. This is a prototype of the app, used to test interaction externally with MongoDB Atlas. The first image shows the functioning login/account creation activity. Next is the Account dashboard. The third screenshot shows the Add Item button in the bottom right quadrant, as well as a list of test items, displaying their status under the item name and a status update option.</p>
+              <br><br><br>
+              <div class="cent">
+              <img src="Images/screen1.PNG" class="preview">
+              <img src="Images/screen2.PNG" class="preview">
+              <img src="Images/screen2.PNG" class="preview">
+            </div><!-- / cent -->
+            <br><br><br>
+            <p>Javascript function calls within the app start all document creation, deletion, and data addition steps. When a user first opens the app they are met with a simple login screen. The option is presented to either login or create a user account. Login data is passed to the backend for checking and is handled by Mongo DB Atlas. If the login is successful all data stored in the User data document is passed through to the app, as well as links/ pointers to all child Item data in case it is required later.</p>
+            <br>
+            <p>If a new user account is created, this will generate an entire new User document with the same key:value pairs as all other User documents, and return of the new document from the backend to the frontend will trigger a request for fill data for these values. Once User data is configured the user can click through to view items, or to add their own items.</p>
+            <br>
+            <p>Adding a new item will generate a new Item document, in much the same way as the new User document above, though in this case the parent fields are automatically filled with applicable user data. Once the backend has instantiated this document, the empty document fields are passed back to the app for filling, and the user is prompted to record details of the item. Approval finalises the creation of the Item and allows the data to be aggregated and displayed with other items, abandoning the item creation will delete the Item Document and eliminate the parent/child link.</p>
+            <br><br>
+            <h4>DATABASE CLUSTER</h4>
+            <p>The backend for Popswap is handled in Mongo DB, where all user and item data is recorded in ‘documents’ as opposed to columns or rows of a traditional relational database. In setting up the database we decided to organise the data around two central schemas, one for Users and one for Items. The separation of these two elements allows other users to access Item centric data without having access to impertinent User data. This was considered a reasonable step to ensure user privacy is maintained. The Item data can be pulled and used in a UI without any interaction with the parent user data until interest in trading is expressed. Separating the data in this way also means that a Parent/child relationship could be instigated between the User and the Item, and this relationship could be passed from one user to another at the point of trade. While the parent/ child relationship is maintained with a specific user, the relevant location data can pass through to the child Item to facilitate trading. After the trade has taken place the Item document is only maintained as a record of trade.</p>
+            <br><br><br><br><br><br>
+            <div class="cent">
+            <img src="Images/a3cluster.PNG" class="table">
+          </div><!-- / cent -->
+          <br><br><br><br><br><br>
+
+
+        <br><br><br><br><br><br>
+
+        </div> <!-- / content -->
+</body>
+
+</html>
