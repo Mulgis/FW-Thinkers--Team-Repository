@@ -123,6 +123,10 @@ li {
 
 }
 
+.linklist {
+  display: inline-block;
+}
+
 #test {
   display: flex;
   margin-left: 20%;
