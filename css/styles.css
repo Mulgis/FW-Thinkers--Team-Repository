@@ -46,6 +46,10 @@ li {
   line-height: 2rem;
 }
 
+li span{
+  font-weight:bold;
+}
+
 
 
 
@@ -78,6 +82,10 @@ li {
   margin: 0 10%;
 }
 
+.cent p {
+  text-align: center;
+}
+
 /* Homepage */
 
 .mem {/* used to control spacing and bordering for member profiles */
@@ -100,11 +108,21 @@ li {
 .avatar {
   float: left;
   margin-right: 20px;
+  width: 200px;
+  border: solid 4px #2D334D;
 }
 
 .avatar2 {
   float: right;
-  margin-left: 20px
+  margin-left: 20px;
+  width: 200px;
+  border: solid 4px #2D334D;
+}
+
+.avatar3 {
+  float: right;
+  margin-left: 20px;
+  border: solid 4px #2D334D;
 }
 
 .big5 {
@@ -290,4 +308,8 @@ a:focus {
 .navbar a:hover {
   color: #f1f1f1;
   background-color: #2D334D;
+}
+
+.proj a{
+  color: chartreuse;
 }
