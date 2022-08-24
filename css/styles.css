@@ -15,7 +15,8 @@ body {
   background-color: #0A0F0D;
 }
 
-.ref {
+
+.ref {/* Reference text for images*/
   font-size: 8px;
   color: grey;
     margin: 3px 0 25px;
@@ -70,7 +71,8 @@ li {
   min-width: 400px;
 }
 
-.cent {
+
+.cent {/* used for centering elements */
   display: flex;
   justify-content: space-evenly;
   margin: 0 10%;
@@ -78,7 +80,7 @@ li {
 
 /* Homepage */
 
-.mem {
+.mem {/* used to control spacing and bordering for member profiles */
   border-bottom: solid #A293DC 3px;
   padding-top:30px;
   padding-bottom: 60px;
@@ -133,25 +135,25 @@ li {
   border: solid 3px #2D334D;
 }
 
-.graph {
+.graph {/* used to center and display images without resizing */
 
   display: flex;
   justify-content: space-evenly;
 }
 
-@media(max-width: 1700px) {
+@media(max-width: 1700px) {/*used to change the way images are displayed when resizing window / using a device with a screen smaller than 1700px */
   .graph {
     flex-direction: column;
   }
 }
 
-  .pent {
+  .pent {/* unify size of some images*/
   width: 200px;
   height: 140px;
 
 }
 
-@media(max-width: 1700px) {
+@media(max-width: 1700px) {/*used to change the way images are displayed when resizing window / using a device with a screen smaller than 1700px */
   .pent {
     width: ;
   }
@@ -186,7 +188,7 @@ li {
 opacity:0.7;
 }
 
-.ovtxt {
+.ovtxt {/* used for text displayed when hovering over image links on technologies page */
   color: #D5C7BC;
   position: absolute;
   text-align: center;
@@ -201,7 +203,7 @@ opacity:0.7;
 }
 
 /* Careers Page */
-.table {
+.table { /* used for unifying image size and borders where appropriate*/
   border: solid 3px #2D334D;
   width: 1000px;
   max-width: 80%;
@@ -209,18 +211,18 @@ opacity:0.7;
 
 /* Project Page*/
 
-.longlist li {
+.longlist li {/* used to space out larger bodies of list items */
     padding-bottom: 5.5rem;
 }
 
-.prevs {
+.prevs {/* used for centering and displaying images side-by-side*/
   display: flex;
     justify-content: space-between;
     margin: 0 20%;
     padding: 10px;
 }
 
-.preview {
+.preview {/* used with prevs to control image size when resizing window*/
   margin: 20px 0;
 
   padding: 0;
@@ -228,36 +230,7 @@ opacity:0.7;
   border: solid 3px #2D334D;
 }
 
-.snap {
-  margin: 0;
-  padding:0;
-}
-
-.prev1 {
-  width: 250px;
-  height: 250px;
-  border: solid 3px #2D334D;
-}
-
-.prev2 {
-  width: 250px;
-  height: 250px;
-  border: solid 3px #2D334D;
-}
-
-.prev3 {
-  width: 250px;
-  height: 250px;
-  border: solid 3px #2D334D;
-}
-
-.snap p {
-  margin: 0 auto 20px;
-  text-align: center;
-}
-
-
-@media(max-width: 1700px) {
+@media(max-width: 1700px) {/*used to change the way images are displayed when resizing window / using a device with a screen smaller than 1700px */
   .cent {
     flex-direction: column;
     align-items: center;
