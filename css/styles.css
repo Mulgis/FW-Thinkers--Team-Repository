@@ -123,8 +123,14 @@ li {
 
 }
 
+.linklist {   /* trying to center horizontal unordered list of links */
+  align: center;
+}
+
 .linklist li {
   display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #test {
